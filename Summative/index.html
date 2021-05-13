@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ladera Heights Stags</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+  </style>
+</head>
+
+<body>
+  <div id="home" class="homepage">
+    <div class="container">
+      <div class="navbar">
+        <div class="icon-bar" onclick="Show()">
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <ul id="nav-lists">
+          <li class="close"><span onclick="Hide()">×</span></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <div class="logo">
+            <a href="#home"><img src="../Summative/Images/logo.jpeg" alt="logo"></a>
+          </div>
+          <li><a href="#tickets">Tickets</a></li>
+          <li><a href="#stats">Stats</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rectangle">
+      <div class="scroll-left">
+        <p>l Welcome To The Ladera Heights Stags Official Webpage l
+          Home Of The 3x Los Angeles South Division Champions! l Go Stags! l</p>
+      </div>
+    </div>
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="../Summative/Images/The Champion - 2020 BYU Football Hype Video.mp4" type="video/mp4">
+    </video>
+    <a href="#nav-lists"><button onclick="topFunction()" id="mybtn" title="Go to top">Top</button></a>
+  </div>
+  <div id="news" class="news">
+    <div class="float-container">
+      <!-- Flex Child Green Begins -->
+      <div class="float-child">
+        <div class="green">
+          <div class="flex-child-green">
+            <video autoplay muted loop id="Video">
+              <source src="../Summative/images/Boca Raton Bowl Highlights_ UCF vs. BYU _ College Football on ESPN.mp4" type="video/mp4">
+            </video>
+            <div class="content">
+              <!-- Use a button to pause/play the video with JavaScript -->
+              <button id="myBtn" onclick="myFunction()">Pause</button>
+              <h1 class="Heading">Stags pummel South side 73-43!</h1>
+              <p class="info-1">An Offensive explosion, Kyson Tiller breaks the school record with 9 passing touchdowns! Wide Receiver T.J Barrett also had a
+                field day with 365yds receiving and 4 touchdowns! As we improve to 12-2 on the season!
+              </p>
+            </div>
+          </div>
+          <!-- Flex Child Green ENDS -->
+          <div class="flex-child-green">
+            <div class="container">
+              <img class="playoffs" src="../Summative/images/news-image.jpeg" alt="">
+              <div class="text-block">
+                <h1 style="margin:5px;">Playoff Bound!</h1>
+                <p class="playoffs-1">After a tough season, the Stags cruise into the second spot of the division. We secure a spot in the State Division 1AA Playoffs
+                  and have a chance to win! We play Leighton High on 9/4/21 at 6.00PM EST.
+                  At Ladera Heights High School Stadium.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Float Child ENDS -->
+      <div class="float-child">
+        <div class="green">
+          <div class="flex-child-green-2">
+            <div class="container">
+              <img class="playoffs" src="../Summative/images/merlin_2835868.0.jpg" alt="">
+              <div class="text-block-2">
+                <h1 style="margin:5px;">Kyson set to become a Tiger!</h1>
+                <p class="playoffs-2">Senior Quarterback Kyson Tiller will take his talents to
+                  NCAA Division 1 and will enrol to Clemson on a full scholarship. Tiller holds
+                  many Stags records and will surely be missed! Go Clemson Tigers!</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex-child-green-2">
+            <div class="container-wrap">
+              <section id="leaderboard">
+                <nav class="ladder-nav">
+                  <div class="ladder-title">
+                    <h1>L.A South Division Rankings</h1>
+                  </div>
+                  <div class="ladder-search">
+                    <input type="text" id="search-leaderboard" class="live-search-box" placeholder="Search Team, Player..." />
+                  </div>
+                </nav>
+                <table id="rankings" class="leaderboard-results" width="100%">
+                  <thead>
+                    <tr>
+                      <th class="table-header-align a">1AA Rank</th>
+                      <th class="table-header-align b">Team</th>
+                      <th class="table-header-align c">Wins</th>
+                      <th class="table-header-align d">Loss</th>
+                      <th class="table-header-align e">Points Differential</th>
+                    </tr>
+                  </thead>
+                </table>
+                <table id="rankings" class="leaderboard-results" width=100%>
+                  <thead>
+                    <tr>
+                      <th class="shift-a">4</th>
+                      <th class="shift-a">Doug Smith</th>
+                      <th class="shift-a">12</th>
+                      <th class="shift-a">2</th>
+                      <th class="shift-a">+314</th>
+                    </tr>
+                  </thead>
+                </table>
+                <table id="rankings" class="leaderboard-results" width=100%>
+                  <thead>
+                    <tr>
+                      <th>6</th>
+                      <th>Ladera Heights</th>
+                      <th>11</th>
+                      <th>3</th>
+                      <th>+284</th>
+                    </tr>
+                  </thead>
+                </table>
+                <table id="rankings" class="leaderboard-results" width=100%>
+                  <thead>
+                    <tr>
+                      <th>34</th>
+                      <th>Lincoln High</th>
+                      <th>10</th>
+                      <th>4</th>
+                      <th>+110</th>
+                    </tr>
+                  </thead>
+                </table>
+                <table id="rankings" class="leaderboard-results" width=100%>
+                  <thead>
+                    <tr>
+                      <th>47</th>
+                      <th>MarQuette</th>
+                      <th>10</th>
+                      <th>4</th>
+                      <th>+104</th>
+                    </tr>
+                  </thead>
+                </table>
+                <table id="rankings" class="leaderboard-results" width=100%>
+                  <thead>
+                    <tr>
+                      <th>125</th>
+                      <th>Albany High</th>
+                      <th>6</th>
+                      <th>8</th>
+                      <th>-46</th>
+                    </tr>
+                  </thead>
+                </table>
+                <table id="rankings" class="leaderboard-results" width=100%>
+                  <thead>
+                    <tr>
+                      <th>246</th>
+                      <th>South Side</th>
+                      <th>2</th>
+                      <th>12</th>
+                      <th>-136</th>
+                    </tr>
+                  </thead>
+                </table>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tickets">
+    
+    <div class="float-container-2">
+      <div class="float-child-1">
+        <div id="tickets" class="card">
+          <img src="../Summative/Images/image.jpeg" alt="Denim Jeans" style="width:100%">
+          <div class="ticket-background">
+            <h1 class="ticket-words">Single Game Tickets</h1>
+            <p class="price">$19.99</p>
+            <p class="ticket-words">1 ticket per purchase</p>
+            <p class="ticket-words">
+              <a href="purchase.html"></a>
+              <a href="purchase.html"><button>Purchase</button>
+            </p></a>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="float-child-2">
+
+        <div class="card">
+          <img src="../Summative/images/hugs.jpeg" alt="Denim Jeans" style="width:100% ">
+          <div class="ticket-background">
+            <h1 class="ticket-words">Season Tickets</h1>
+            <p class="price">$119.99</p>
+            <p class="ticket-words">2 tickets per purchase</p>
+
+            <p class="ticket-words">
+              <a href="purchase.html"><button>Purchase</button>
+            </p></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div id="stats" class="stats">
+
+
+    <div class="float-container-3">
+
+      <div class="float-child-4">
+
+        <img class="player" src="../Summative/images/https___fansided.com_wp-content_uploads_imagn-images_2020_12_15350670.jpeg" alt="">
+        <div class="name-background">
+
+          <div class="name">
+            <p>Kyson Tiller</p>
+          </div>
+        </div>
+      </div>
+      <div class="float-child-3">
+        <table class="table" style="width:100%">
+
+
+          <tr class="actual-stats-qb">
+            <td>346/521 Cmp/Att</td>
+            <td>54/8 TD/Int</td>
+            <td>4785 Yds</td>
+            <td>124.64 Rtg</td>
+          </tr>
+        </table>
+
+        <div class="table-2">
+
+          <table>
+            <tr class="actual-stats">
+              <p class="name-2">Caleb Abbott</p>
+            </tr>
+          </table>
+          <table class=stats-3>
+
+
+            <tr class="actual-stats-2">
+              <td>21/34 Cmp/Att</td>
+              <td>9/1 Td/Int</td>
+              <td>564 Yds</td>
+              <td>132.97 Rtg</td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="table-2">
+
+          <table>
+            <tr class="actual-stats">
+              <p class="name-4">Donovan Smith</p>
+            </tr>
+          </table>
+          <table class=stats-3>
+
+
+            <tr class="actual-stats-4">
+              <td>1/2 Cmp/Att</td>
+              <td>1/0 TD/Int</td>
+              <td>54 yds</td>
+              <td>135.42 Rtg</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+      <div class="float-child-4">
+
+        <img class="player" src="../Summative/images/usatsi_15141777_168390393_lowres.jpeg" alt="">
+        <div class="name-background">
+
+          <div class="name">
+            <p>T.J Barrett</p>
+          </div>
+        </div>
+      </div>
+      <div class="float-child-3">
+        <table class="table" style="width:100%">
+
+
+          <tr class="actual-stats">
+            <td>66 Rec</td>
+            <td>1567 Yds</td>
+            <td>23.7 Avg</td>
+            <td>13 TD</td>
+          </tr>
+        </table>
+
+        <div class="table-2">
+
+          <table>
+            <tr class="actual-stats">
+              <p class="name-2">Aidan McRae Jr.</p>
+            </tr>
+          </table>
+          <table class=stats-3>
+
+
+            <tr class="actual-stats-2">
+              <td>99 Rec</td>
+              <td>1332 Yds</td>
+              <td>13.45 Avg</td>
+              <td>11 TD</td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="table-2">
+
+          <table>
+            <tr class="actual-stats">
+              <p class="name-3">Abraham Moizous</p>
+            </tr>
+          </table>
+          <table class=stats-3>
+
+
+            <tr class="actual-stats-3">
+              <td>60 Rec</td>
+              <td>564 Yds</td>
+              <td>13 TD</td>
+              <td>9.40 Avg</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+      <div class="float-child-4">
+
+        <img class="player" src="../Summative/images/AP20277169261126.0.jpg" alt="">
+        <div class="name-background-2">
+
+          <div class="name">
+            <p>Jhalill Roberts</p>
+          </div>
+        </div>
+      </div>
+      <div class="float-child-3">
+        <table class="table" style="width:100%">
+
+
+          <tr class="actual-stats">
+            <td>262 Att</td>
+            <td>22 TD</td>
+            <td>1323 Yds</td>
+            <td>5.04 Avg</td>
+          </tr>
+        </table>
+
+        <div class="table-2">
+
+          <table>
+            <tr class="actual-stats">
+              <p class="name-2">Jacob Maxson</p>
+            </tr>
+          </table>
+          <table class=stats-3>
+
+
+            <tr class="actual-stats-2">
+              <td>115 Att</td>
+              <td>11 TDs</td>
+              <td>564 Yds</td>
+              <td>4.90 Avg</td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="table-2">
+
+          <table>
+            <tr class="actual-stats">
+              <p class="name-3">Kyson Tiller</p>
+            </tr>
+          </table>
+          <table class=stats-3>
+
+
+            <tr class="actual-stats-3">
+              <td>85 Att</td>
+              <td>10 TDs</td>
+              <td>264 Yds</td>
+              <td>3.10 Avg</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+      <div class="float-child-4">
+
+        <img class="player" src="../Summative/images/EUWPGTWYMRC7VFSOXHPBHIHGPM.jpeg" alt="">
+        <div class="name-background-2">
+
+          <div class="name">
+            <p>Tre De'Vore</p>
+          </div>
+        </div>
+      </div>
+      <div class="float-child-3">
+        <table class="table" style="width:100%">
+
+
+          <tr class="actual-stats">
+            <td>62 Tck</td>
+            <td>2.5 Sck</td>
+            <td>6 Int</td>
+            <td>2 FF</td>
+            <td>6 TFL</td>
+          </tr>
+        </table>
+
+        <div class="table-2">
+
+          <table>
+            <tr class="actual-stats">
+              <p class="name-2">Leonard Broughton</p>
+            </tr>
+          </table>
+          <table class=stats-3>
+
+
+            <tr class="actual-stats-2">
+              <td>115 Tck</td>
+              <td>2 FF</td>
+              <td>3.5 Sck</td>
+              <td>2 Int</td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="table-2">
+
+          <table>
+            <tr class="actual-stats">
+              <p class="name-3">Dontai De'Vore</p>
+            </tr>
+          </table>
+          <table class=stats-3>
+
+
+            <tr class="actual-stats-3">
+              <td>62 Tck</td>
+              <td>2.5 Sck</td>
+              <td>6 Int</td>
+              <td>2 FF</td>
+              <td>6 TFL</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Get the video
+      var video = document.getElementById("Video");
+
+      // Get the button
+      var btn = document.getElementById("myBtn");
+
+      // Pause and play the video, and change the button text
+      function myFunction() {
+        if (video.paused) {
+          video.play();
+          btn.innerHTML = "Pause";
+        } else {
+          video.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+    </script>
+
+</body>
+
+</html>

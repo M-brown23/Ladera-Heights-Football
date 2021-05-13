@@ -1,0 +1,737 @@
+
+/* Css Sass font */
+$font: 'Poppins', sans-serif;
+$color: #17468f;
+@import 'leaderboard';
+/* Css Sass Import */
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+#myVideo {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+}
+
+.homepage {
+  margin-bottom: -10px;
+}
+
+.container {
+  height: 100px;
+  background-color: #235DBB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+#nav-lists {
+  margin-left: 375px;
+}
+
+.container .logo {
+  max-width: 250px;
+  padding: 0 20px;
+}
+
+.container .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Sass Nest Element */
+.container {
+  .logo {
+    a {
+      img {
+        height: 100px;
+      }
+    }
+  }
+}
+
+.container .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.container .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 41px;
+  padding-top: 40px;
+  display: block;
+  height: 60px;
+  line-height: 100px;
+  cursor: pointer;
+  padding: 0 70px;
+}
+
+.container .navbar ul li a:hover {
+  color: white;
+  background-color: #132C55;
+  height: 100%;
+}
+
+.container .navbar ul .close {
+  display: none;
+  text-align: right;
+  padding: 10px;
+}
+
+.container .navbar ul .close span {
+  font-size: 40px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.container .navbar .icon-bar {
+  padding: 18px 8px;
+  width: 50px;
+  height: 60px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container .navbar .icon-bar i {
+  background-color: #ffffff;
+  height: 2px;
+}
+
+@media only screen and (max-width: 650px) {
+  .container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .container .logo {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .container .navbar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+  }
+
+  .container .navbar ul {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    position: fixed;
+    left: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    -webkit-transition: left .3s;
+    -o-transition: left .3s;
+    transition: left .3s;
+  }
+
+  .container .navbar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    height: auto;
+    line-height: normal;
+    color: #555555;
+  }
+
+  .container .navbar ul .close {
+    display: block;
+  }
+
+  .container .navbar .icon-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .container .navbar ._Menus-show {
+    left: 0;
+  }
+}
+
+@media (min-device-width:600px) {
+  .scroll-left {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    background: $color;
+    color: white;
+  }
+
+  .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    animation: scroll-left 15s linear infinite;
+  }
+
+  /* Move it (define the animation) */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .title {
+    margin-left: 100px;
+    font-family: helvetica, sans-serif;
+    font-size: 35px;
+    color: white;
+  }
+
+  .rectangle-2 {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 820px;
+    top: 480px;
+    background-color: $color;
+  }
+
+  .title-2 {
+    margin-left: 60px;
+    font-family: helvetica, sans-serif;
+    font-size: 35px;
+    color: white;
+  }
+
+  #mybtn {
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #132C55;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+  }
+
+  #mybtn:hover {
+    background-color: #132C55;
+    /* Add a dark-grey background on hover */
+  }
+
+  .news {
+    height: 1600px;
+    width: 100%;
+    background-image: url("../Images/Background-1.jpeg");
+  }
+
+  .float-container {
+    padding: 20px;
+    height: 95%;
+    margin-left: 150px;
+    margin-bottom: 10px;
+  }
+
+  .float-child {
+    width: 45%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    height: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+    height: 50%;
+  }
+
+  .flex-child:first-child {
+    margin-right: 20px;
+  }
+
+  .green {
+    height: 100%;
+  }
+
+  .flex-child-green {
+    height: 50%;
+    width: 100%;
+    background-color: $color;
+    margin: 10px;
+  }
+
+  .flex-child-green-2 {
+    height: 50%;
+    background-color: $color;
+    margin: 10px;
+    width: 100%;
+  }
+
+  #Video {
+    width: 100.1%;
+  }
+
+  /* Add some content at the bottom of the video/page */
+  .content {
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 20%;
+    height: 100%;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #132C55;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #myBtn:hover {
+    background: black;
+    color: white;
+  }
+
+  .info-1 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+
+  .Heading {
+    margin-top: 25px;
+  }
+
+  .playoffs {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 80px;
+    background: rgba(23, 70, 143, 0.8);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 42%;
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .playoffs-3 {
+    margin-top: 15px;
+    font-size: 21px;
+  }
+
+  .text-block-2 {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 80px;
+    background: rgba(23, 70, 143, 0.8);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 42%;
+    width: 80%;
+    font-size: 25px;
+  }
+
+  .playoffs-1 {
+    margin-top: 15px;
+    font-size: 23px;
+  }
+
+  .playoffs-2 {
+    margin-top: 15px;
+    font-size: 21px;
+  }
+
+  .tickets {
+    height: 900px;
+    width: 100%;
+    background-image: url("../images/background-2.jpeg")
+
+  }
+
+
+
+  .float-container-2 {
+    height: 100%;
+    border: 10px;
+    margin-left: 315px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .float-child-1 {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    height: 100%;
+    margin: 5px;
+  }
+
+  .float-child-2 {
+    width: 40%;
+    float: left;
+    padding: 10px;
+    height: 100%;
+    margin: 5px;
+  }
+
+  .card {
+    background-color: $color;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    height: 100%;
+  }
+
+  .price {
+    color: white;
+    font-size: 120px;
+    margin: 0px;
+  }
+
+  .ticket-background {
+    background-color: #132C55;
+    height: 52%;
+  }
+
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #F41116;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+    height: 30%;
+    font-size: 45px;
+  }
+
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .ticket-words {
+    color: white;
+    padding-top: 10px;
+  }
+
+  .stats {
+    height: 2150px;
+    width: 100%;
+    background-color: #2B2B2B;
+  }
+
+  .float-container-3 {
+    height: 100%;
+    border: 10px;
+    margin-left: 515px;
+  }
+
+  .float-child-3 {
+    width: 35%;
+    float: left;
+    padding: 10px;
+    height: 24.5%;
+    margin: 5px;
+    background-color: #132C55;
+  }
+
+  .float-child-4 {
+    width: 35%;
+    float: left;
+    padding: 10px;
+    height: 24.5%;
+    margin: 5px;
+    background-color: #132C55;
+  }
+
+  .player {
+    height: 100%;
+    width: 100%;
+  }
+
+  .name {
+    position: relative;
+    font-size: 50px;
+    font-style: normal;
+    padding-left: 5px;
+    color: white;
+  }
+
+  .name-background {
+    position: relative;
+    font-size: 50px;
+    bottom: 150px;
+    padding-left: 5px;
+    background-color: $color;
+    margin: 5px;
+    width: 60%;
+  }
+
+  .name-background-2 {
+    position: relative;
+    font-size: 50px;
+    bottom: 150px;
+    padding-left: 5px;
+    background-color: $color;
+    margin: 5px;
+    width: 78%;
+  }
+
+  .table {
+    background-color: $color;
+    text-align: center;
+    height: 49%;
+  }
+
+  .actual-stats {
+    font-size: 50px;
+    background-color: $color;
+    color: white;
+  }
+
+  .actual-stats-qb {
+    font-size: 30px;
+    background-color: $color;
+    color: white;
+  }
+
+  .table-2 {
+    background-color: $color;
+    text-align: center;
+    height: 25%;
+  }
+
+  .name-2 {
+    font-size: 25px;
+    margin: 2px;
+    color: white;
+  }
+
+  .stats-3 {
+    background-color: $color;
+    width: 100%;
+  }
+
+  .actual-stats-2 {
+    color: white;
+    font-size: 25px;
+    background-color: $color;
+    text-align: center;
+    height: 20%;
+  }
+
+  .name-3 {
+    font-size: 25px;
+    margin-top: 2px;
+    color: white;
+  }
+
+  .name-4 {
+    font-size: 20px;
+    margin-top: 2px;
+    color: white;
+  }
+
+  .actual-stats-3 {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background-color: $color;
+    text-align: center;
+    height: 20%;
+  }
+
+  .actual-stats-4 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-color: $color;
+    text-align: center;
+    height: 20%;
+  }
+
+
+
+  /* /end Leaderboard Results */
+  /* Media Queries */
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    #nav-lists {
+      margin-left: 111px;
+    }
+
+    .text-block-2 {
+      position: absolute;
+      margin-top: 350px;
+      margin-left: 80px;
+      background: rgba(23, 70, 143, 0.8);
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 42%;
+      width: 80%;
+      font-size: 22px;
+    }
+
+    .playoffs-2 {
+      margin-top: 15px;
+      font-size: 19px;
+    }
+
+    .leaderboard-results thead th {
+      padding: 25px;
+      color: white;
+      font-size: 13.7px;
+      font-weight: bold;
+    }
+
+    .playoffs-1 {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .card {
+      background-color: $color;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      font-family: arial;
+      height: 100%;
+    }
+
+    .price {
+      color: white;
+      font-size: 110px;
+      margin: 0px;
+    }
+
+    .float-container-3 {
+      height: 100%;
+      border: 10px;
+      width: 100%;
+      margin-left: 220px;
+    }
+
+    .float-container-2 {
+      height: 100%;
+      border: 10px;
+      margin-left: 256px;
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;}
+}
+}
